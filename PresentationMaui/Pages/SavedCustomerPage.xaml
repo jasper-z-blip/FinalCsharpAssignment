@@ -1,0 +1,32 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PresentationMaui.Pages.SavedCustomerPage"
+             Title="Saved Customers">
+    <VerticalStackLayout Padding="20">
+        <ListView x:Name="CustomerListView" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10">
+                            
+                            <Label Text="{Binding CustomerNumber}" TextColor="Gray" />
+                            
+                            <Label Text="Customer ID:" FontAttributes="Bold" />
+                            <Label Text="{Binding Id}" TextColor="Gray" />
+
+                            <Label Text="{Binding FirstName}" />
+                            <Label Text="{Binding LastName}" />
+                            <Label Text="{Binding Email}" />
+                            <Label Text="{Binding PhoneNumber}" />
+                            <Label Text="{Binding Address}" />
+                            <Label Text="{Binding PostalCode}" />
+                            <Label Text="{Binding City}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>
+
+

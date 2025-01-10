@@ -1,0 +1,22 @@
+[
+  {
+    "Id": "d76d2325-9823-497e-a287-c594b1f5f615",
+    "FirstName": "Jasper",
+    "LastName": "Packalen",
+    "Email": "jasper@doamin.se",
+    "PhoneNumber": "0706247323",
+    "Address": "dd",
+    "PostalCode": "45678",
+    "City": "dd"
+  },
+  {
+    "Id": "f86e14f4-813b-4716-b26f-f5f9cdd6b3bb",
+    "FirstName": "Jasper",
+    "LastName": "Packalen",
+    "Email": "jaasper@live.com",
+    "PhoneNumber": "9604839204",
+    "Address": "Berge 5",
+    "PostalCode": "56789",
+    "City": "Örebro"
+  }
+]
