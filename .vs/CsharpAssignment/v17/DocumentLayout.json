@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Projects\\CsharpAssignment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5891A13A-CE2A-4FA3-843D-A79F13E0F673}|Shared\\Shared.csproj|c:\\projects\\csharpassignment\\shared\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5891A13A-CE2A-4FA3-843D-A79F13E0F673}|Shared\\Shared.csproj|solutionrelative:shared\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5891A13A-CE2A-4FA3-843D-A79F13E0F673}|Shared\\Shared.csproj|c:\\projects\\csharpassignment\\shared\\services\\customervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5891A13A-CE2A-4FA3-843D-A79F13E0F673}|Shared\\Shared.csproj|solutionrelative:shared\\services\\customervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCD877E-628A-4997-89F9-69DAC6DFCE81}|PresentationMaui\\PresentationMaui.csproj|c:\\projects\\csharpassignment\\presentationmaui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCCD877E-628A-4997-89F9-69DAC6DFCE81}|PresentationMaui\\PresentationMaui.csproj|solutionrelative:presentationmaui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5891A13A-CE2A-4FA3-843D-A79F13E0F673}|Shared\\Shared.csproj|c:\\projects\\csharpassignment\\shared\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5891A13A-CE2A-4FA3-843D-A79F13E0F673}|Shared\\Shared.csproj|solutionrelative:shared\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Projects\\CsharpAssignment\\PresentationMaui\\App.xaml.cs",
+              "RelativeDocumentMoniker": "PresentationMaui\\App.xaml.cs",
+              "ToolTip": "C:\\Projects\\CsharpAssignment\\PresentationMaui\\App.xaml.cs",
+              "RelativeToolTip": "PresentationMaui\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T20:17:46.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FileService.cs",
               "DocumentMoniker": "C:\\Projects\\CsharpAssignment\\Shared\\Services\\FileService.cs",
               "RelativeDocumentMoniker": "Shared\\Services\\FileService.cs",
@@ -35,13 +52,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CustomerValidator.cs",
               "DocumentMoniker": "C:\\Projects\\CsharpAssignment\\Shared\\Services\\CustomerValidator.cs",
               "RelativeDocumentMoniker": "Shared\\Services\\CustomerValidator.cs",
               "ToolTip": "C:\\Projects\\CsharpAssignment\\Shared\\Services\\CustomerValidator.cs",
               "RelativeToolTip": "Shared\\Services\\CustomerValidator.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwEAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-12T19:44:21.804Z",
               "EditorCaption": ""

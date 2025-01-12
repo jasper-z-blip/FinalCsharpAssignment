@@ -10,13 +10,13 @@ namespace Shared.Services
         {
             if (string.IsNullOrWhiteSpace(customer.FirstName))
             {
-                errorMessage = "First Name is required.";
+                errorMessage = "Firstname is required.";
                 return false;
             }
 
             if (string.IsNullOrWhiteSpace(customer.LastName))
             {
-                errorMessage = "Last Name is required.";
+                errorMessage = "Lastname is required.";
                 return false;
             }
 
@@ -28,7 +28,7 @@ namespace Shared.Services
 
             if (string.IsNullOrWhiteSpace(customer.PhoneNumber))
             {
-                errorMessage = "Phone Number is required.";
+                errorMessage = "Phonenumber is required.";
                 return false;
             }
 
@@ -40,7 +40,7 @@ namespace Shared.Services
 
             if (string.IsNullOrWhiteSpace(customer.PostalCode))
             {
-                errorMessage = "Postal Code is required.";
+                errorMessage = "Postalcode is required.";
                 return false;
             }
 
