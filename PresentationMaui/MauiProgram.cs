@@ -1,8 +1,5 @@
-﻿using Microsoft.Maui;
-using Microsoft.Maui.Hosting;
-using Shared.Interfaces;
+﻿using Shared.Interfaces;
 using Shared.Services;
-using Shared.Models;
 using Shared.Factories;
 
 namespace PresentationMaui;
@@ -11,17 +8,18 @@ public static class MauiProgram
 {
     public static MauiApp CreateMauiApp()
     {
-        var builder = MauiApp.CreateBuilder();
+        // Som en "låda" där den samlar allt som appen behöver och förbereder för att appen ska fungera. 
+        var builder = MauiApp.CreateBuilder(); 
         builder
-            .UseMauiApp<App>()
+            .UseMauiApp<App>() // Detta blir Huvudklassen för appen.
             .ConfigureFonts(fonts =>
             {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular"); 
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
 
-        // Dependency injection
-
+        // Dependency injection med en extension jag installera Microsoft.Extension.DependencyInjection, detta gör tjänster tillgängliga för appen. Denpendency Injection har jag förstått löser beoenden automatiskt.
+        // Singleton = En instans.
         builder.Services.AddSingleton<IFileService, FileService>();
         builder.Services.AddSingleton<ICustomerService, CustomerService>();
         builder.Services.AddSingleton<CustomerFactory>();
@@ -31,6 +29,3 @@ public static class MauiProgram
         return builder.Build();
     }
 }
-
-
-

@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Projects\\CsharpAssignment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FCCD877E-628A-4997-89F9-69DAC6DFCE81}|PresentationMaui\\PresentationMaui.csproj|c:\\projects\\csharpassignment\\presentationmaui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCCD877E-628A-4997-89F9-69DAC6DFCE81}|PresentationMaui\\PresentationMaui.csproj|solutionrelative:presentationmaui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5891A13A-CE2A-4FA3-843D-A79F13E0F673}|Shared\\Shared.csproj|c:\\projects\\csharpassignment\\shared\\factories\\customerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5891A13A-CE2A-4FA3-843D-A79F13E0F673}|Shared\\Shared.csproj|solutionrelative:shared\\factories\\customerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Projects\\CsharpAssignment\\PresentationMaui\\App.xaml.cs",
-              "RelativeDocumentMoniker": "PresentationMaui\\App.xaml.cs",
-              "ToolTip": "C:\\Projects\\CsharpAssignment\\PresentationMaui\\App.xaml.cs",
-              "RelativeToolTip": "PresentationMaui\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CustomerFactory.cs",
+              "DocumentMoniker": "C:\\Projects\\CsharpAssignment\\Shared\\Factories\\CustomerFactory.cs",
+              "RelativeDocumentMoniker": "Shared\\Factories\\CustomerFactory.cs",
+              "ToolTip": "C:\\Projects\\CsharpAssignment\\Shared\\Factories\\CustomerFactory.cs",
+              "RelativeToolTip": "Shared\\Factories\\CustomerFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T08:13:57.772Z",
+              "WhenOpened": "2025-01-12T19:07:54.64Z",
               "EditorCaption": ""
             },
             {

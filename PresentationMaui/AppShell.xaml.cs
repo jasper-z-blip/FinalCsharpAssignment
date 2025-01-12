@@ -6,7 +6,7 @@ public partial class AppShell : Shell
     {
         InitializeComponent();
 
-        // Register routes for navigation
+        // Mellan olika sidor
         Routing.RegisterRoute("MainPage", typeof(Pages.MainPage));
         Routing.RegisterRoute("SavedCustomerPage", typeof(Pages.SavedCustomerPage));
         Routing.RegisterRoute("EditCustomerPage", typeof(Pages.EditCustomerPage));
