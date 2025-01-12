@@ -3,6 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace Shared.Services
 {
+    // Validering för att fälten måste var ifyllda och email har specifik validering med @ och ex dd@dd.se.
     public class CustomerValidator
     {
         public bool Validate(Customer customer, out string errorMessage)
@@ -49,6 +50,7 @@ namespace Shared.Services
                 return false;
             }
 
+            // Om alla fält är ifyllda korrekt så blir errorMessage en tom sträng och valideringen är ok.
             errorMessage = string.Empty;
             return true;
         }
@@ -61,5 +63,3 @@ namespace Shared.Services
         }
     }
 }
-
-

@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Projects\\CsharpAssignment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5891A13A-CE2A-4FA3-843D-A79F13E0F673}|Shared\\Shared.csproj|c:\\projects\\csharpassignment\\shared\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5891A13A-CE2A-4FA3-843D-A79F13E0F673}|Shared\\Shared.csproj|solutionrelative:shared\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5891A13A-CE2A-4FA3-843D-A79F13E0F673}|Shared\\Shared.csproj|c:\\projects\\csharpassignment\\shared\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5891A13A-CE2A-4FA3-843D-A79F13E0F673}|Shared\\Shared.csproj|solutionrelative:shared\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5891A13A-CE2A-4FA3-843D-A79F13E0F673}|Shared\\Shared.csproj|c:\\projects\\csharpassignment\\shared\\services\\customervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5891A13A-CE2A-4FA3-843D-A79F13E0F673}|Shared\\Shared.csproj|solutionrelative:shared\\services\\customervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Projects\\CsharpAssignment\\Shared\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "Shared\\Models\\Customer.cs",
-              "ToolTip": "C:\\Projects\\CsharpAssignment\\Shared\\Models\\Customer.cs",
-              "RelativeToolTip": "Shared\\Models\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Projects\\CsharpAssignment\\Shared\\Services\\FileService.cs",
+              "RelativeDocumentMoniker": "Shared\\Services\\FileService.cs",
+              "ToolTip": "C:\\Projects\\CsharpAssignment\\Shared\\Services\\FileService.cs",
+              "RelativeToolTip": "Shared\\Services\\FileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T19:26:35.045Z",
+              "WhenOpened": "2025-01-12T20:04:59.119Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerValidator.cs",
+              "DocumentMoniker": "C:\\Projects\\CsharpAssignment\\Shared\\Services\\CustomerValidator.cs",
+              "RelativeDocumentMoniker": "Shared\\Services\\CustomerValidator.cs",
+              "ToolTip": "C:\\Projects\\CsharpAssignment\\Shared\\Services\\CustomerValidator.cs",
+              "RelativeToolTip": "Shared\\Services\\CustomerValidator.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwEAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T19:44:21.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
