@@ -1,0 +1,30 @@
+<Shell
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PresentationMaui.Pages"
+    x:Class="PresentationMaui.AppShell"
+    FlyoutBehavior="Flyout">
+
+    <ShellContent
+        Title="Register Customer"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="Saved Customers"
+        ContentTemplate="{DataTemplate local:SavedCustomerPage}"
+        Route="SavedCustomerPage" />
+
+    <ShellContent
+        Title="Edit Customer"
+        ContentTemplate="{DataTemplate local:EditCustomerPage}"
+        Route="EditCustomerPage" />
+</Shell>
+
+
+
+
+
+
+
+

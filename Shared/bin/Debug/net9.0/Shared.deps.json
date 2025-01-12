@@ -1,0 +1,75 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Shared/1.0.0": {
+        "dependencies": {
+          "Microsoft.Maui.Essentials": "9.0.22",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "Shared.dll": {}
+        }
+      },
+      "Microsoft.Maui.Essentials/9.0.22": {
+        "dependencies": {
+          "Microsoft.Maui.Graphics": "9.0.22"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Maui.Essentials.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "9.0.2225.5707"
+          }
+        }
+      },
+      "Microsoft.Maui.Graphics/9.0.22": {
+        "runtime": {
+          "lib/net9.0/Microsoft.Maui.Graphics.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "9.0.2225.5707"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Maui.Essentials/9.0.22": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIDxo5WxfWmK8/tz55MeCpgIPlmWci93SOYxJJ/wfFpL8IxuFeayh0lhhVs0Osys9na3owCN2fDPOS6iuaajjw==",
+      "path": "microsoft.maui.essentials/9.0.22",
+      "hashPath": "microsoft.maui.essentials.9.0.22.nupkg.sha512"
+    },
+    "Microsoft.Maui.Graphics/9.0.22": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A/Eud9isgrM5IRrYueNNZRLVBet9FZFa0bk4uPVcezHHMUSqLetd4jmIgoolm2du6CJ/LDsvn3QmbIbz0tlf+A==",
+      "path": "microsoft.maui.graphics/9.0.22",
+      "hashPath": "microsoft.maui.graphics.9.0.22.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    }
+  }
+}

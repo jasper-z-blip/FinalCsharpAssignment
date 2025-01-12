@@ -1,0 +1,13 @@
+C:\Projects\CsharpAssignment\Business\bin\Debug\net9.0\Business.deps.json
+C:\Projects\CsharpAssignment\Business\bin\Debug\net9.0\Business.dll
+C:\Projects\CsharpAssignment\Business\bin\Debug\net9.0\Business.pdb
+C:\Projects\CsharpAssignment\Business\obj\Debug\net9.0\Business.csproj.AssemblyReference.cache
+C:\Projects\CsharpAssignment\Business\obj\Debug\net9.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CsharpAssignment\Business\obj\Debug\net9.0\Business.AssemblyInfoInputs.cache
+C:\Projects\CsharpAssignment\Business\obj\Debug\net9.0\Business.AssemblyInfo.cs
+C:\Projects\CsharpAssignment\Business\obj\Debug\net9.0\Business.csproj.CoreCompileInputs.cache
+C:\Projects\CsharpAssignment\Business\obj\Debug\net9.0\Business.sourcelink.json
+C:\Projects\CsharpAssignment\Business\obj\Debug\net9.0\Business.dll
+C:\Projects\CsharpAssignment\Business\obj\Debug\net9.0\refint\Business.dll
+C:\Projects\CsharpAssignment\Business\obj\Debug\net9.0\Business.pdb
+C:\Projects\CsharpAssignment\Business\obj\Debug\net9.0\ref\Business.dll

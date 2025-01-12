@@ -1,0 +1,46 @@
+[
+  {
+    "CustomerNumber": 1,
+    "FirstName": "Jasper",
+    "LastName": "Packalen",
+    "PhoneNumber": "0785748392",
+    "Email": "Jasper@domain.se",
+    "Address": "Begre 2",
+    "PostalCode": "78654",
+    "City": "Köping",
+    "Id": "1f055501-abf1-4318-a9f1-0c8a8c6b154c"
+  },
+  {
+    "CustomerNumber": 5,
+    "FirstName": "Rae",
+    "LastName": "Madden",
+    "PhoneNumber": "7584930456",
+    "Email": "rae@domain.se",
+    "Address": "Skogstorp 4",
+    "PostalCode": "65894",
+    "City": "Köping",
+    "Id": "b83ce828-3a49-4089-9563-6028428c5cee"
+  },
+  {
+    "CustomerNumber": 6,
+    "FirstName": "Morgan",
+    "LastName": "Breitner",
+    "PhoneNumber": "96784695",
+    "Email": "morgan@domain.se",
+    "Address": "Skogstorp 5",
+    "PostalCode": "90685",
+    "City": "Örebro",
+    "Id": "d8537b17-f695-4918-992f-71592f583654"
+  },
+  {
+    "CustomerNumber": 7,
+    "FirstName": "Pia",
+    "LastName": "Packalen",
+    "PhoneNumber": "0795846372",
+    "Email": "pia@domain.se",
+    "Address": "Åltorp 15",
+    "PostalCode": "86950",
+    "City": "Arboga",
+    "Id": "3b6bb995-80a1-4a28-b1e2-5b70936b1141"
+  }
+]
