@@ -6,7 +6,7 @@ public partial class AppShell : Shell
     {
         InitializeComponent();
 
-        // Mellan olika sidor
+        // Registrerar "vägar" för sid-navigering mellan olika sidor, navigering via Shell.
         Routing.RegisterRoute("MainPage", typeof(Pages.MainPage));
         Routing.RegisterRoute("SavedCustomerPage", typeof(Pages.SavedCustomerPage));
         Routing.RegisterRoute("EditCustomerPage", typeof(Pages.EditCustomerPage));
