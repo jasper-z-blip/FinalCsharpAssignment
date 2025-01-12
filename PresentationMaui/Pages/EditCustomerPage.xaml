@@ -3,26 +3,28 @@
              x:Class="PresentationMaui.Pages.EditCustomerPage"
              Title="Edit Customer">
 
-    <VerticalStackLayout Padding="20" Margin="25" Spacing="10">
-        <!-- Input för att ange kundnummer -->
-        <Entry x:Name="CustomerNumberEntry" Placeholder="Enter Customer Number" Keyboard="Numeric" />
-        <Button Text="Search for Customer" Clicked="LoadCustomerButton_Clicked" BackgroundColor="ForestGreen" />
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Margin="25" Spacing="10">
+            <!-- Input för att ange kundnummer -->
+            <Entry x:Name="CustomerNumberEntry" Placeholder="Enter Customer Number" Keyboard="Numeric" />
+            <Button Text="Search for Customer" Clicked="LoadCustomerButton_Clicked" BackgroundColor="ForestGreen" />
 
-        <!-- Kunddetaljer -->
-        <Entry x:Name="FirstNameEntry" Placeholder="Firstname" IsEnabled="False" />
-        <Entry x:Name="LastNameEntry" Placeholder="Lastname" IsEnabled="False" />
-        <Entry x:Name="EmailEntry" Placeholder="Email" IsEnabled="False" />
-        <Entry x:Name="PhoneNumberEntry" Placeholder="Phone number" IsEnabled="False" />
-        <Entry x:Name="AddressEntry" Placeholder="Address" IsEnabled="False" />
-        <Entry x:Name="PostalCodeEntry" Placeholder="Postalcode" IsEnabled="False" />
-        <Entry x:Name="CityEntry" Placeholder="City" IsEnabled="False" />
+            <!-- Kunddetaljer -->
+            <Entry x:Name="FirstNameEntry" Placeholder="Firstname" IsEnabled="False" />
+            <Entry x:Name="LastNameEntry" Placeholder="Lastname" IsEnabled="False" />
+            <Entry x:Name="EmailEntry" Placeholder="Email" IsEnabled="False" />
+            <Entry x:Name="PhoneNumberEntry" Placeholder="Phone number" IsEnabled="False" />
+            <Entry x:Name="AddressEntry" Placeholder="Address" IsEnabled="False" />
+            <Entry x:Name="PostalCodeEntry" Placeholder="Postalcode" IsEnabled="False" />
+            <Entry x:Name="CityEntry" Placeholder="City" IsEnabled="False" />
 
-        <!-- Spara och radera knappar -->
-        <HorizontalStackLayout Spacing="10">
-            <Button x:Name="SaveButton" Text="Save Changes" Clicked="SaveButton_Clicked" IsEnabled="False" BackgroundColor="ForestGreen" TextColor="White" />
-            <Button x:Name="DeleteButton" Text="Delete Customer" Clicked="DeleteButton_Clicked" IsEnabled="False" BackgroundColor="DarkRed" TextColor="White" />
-        </HorizontalStackLayout>
-    </VerticalStackLayout>
+            <!-- Spara och radera knappar -->
+            <HorizontalStackLayout Spacing="10">
+                <Button x:Name="SaveButton" Text="Save Changes" Clicked="SaveButton_Clicked" IsEnabled="False" BackgroundColor="ForestGreen" TextColor="White" />
+                <Button x:Name="DeleteButton" Text="Delete Customer" Clicked="DeleteButton_Clicked" IsEnabled="False" BackgroundColor="DarkRed" TextColor="White" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
 
 

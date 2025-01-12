@@ -3,22 +3,24 @@
              x:Class="PresentationMaui.Pages.MainPage"
              Title="Register Customer">
 
-    <VerticalStackLayout Padding="20" Spacing="15">
-        <Label Text="Register New Customer"
-               FontSize="24"
-               HorizontalOptions="Center" />
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Register New Customer"
+                   FontSize="24"
+                   HorizontalOptions="Center" />
 
-        <Entry x:Name="FirstNameEntry" Placeholder="First Name" />
-        <Entry x:Name="LastNameEntry" Placeholder="Last Name" />
-        <!-- När jag bad om tips vad att tänka på från chatGPT, så fick jag förslag att använda Keyboard för att det ska fungera på en mobiltelefon också? Jag har inte testat. -->
-        <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" /> 
-        <Entry x:Name="PhoneNumberEntry" Placeholder="Phone Number" Keyboard="Telephone" /> 
-        <Entry x:Name="AddressEntry" Placeholder="Address" />
-        <Entry x:Name="PostalCodeEntry" Placeholder="Postal Code" Keyboard="Numeric" />
-        <Entry x:Name="CityEntry" Placeholder="City" />
+            <Entry x:Name="FirstNameEntry" Placeholder="First Name" />
+            <Entry x:Name="LastNameEntry" Placeholder="Last Name" />
+            <!-- När jag bad om tips vad att tänka på från chatGPT, så fick jag förslag att använda Keyboard för att det ska fungera på en mobiltelefon också? Jag har inte testat. -->
+            <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" /> 
+            <Entry x:Name="PhoneNumberEntry" Placeholder="Phone Number" Keyboard="Telephone" /> 
+            <Entry x:Name="AddressEntry" Placeholder="Address" />
+            <Entry x:Name="PostalCodeEntry" Placeholder="Postal Code" Keyboard="Numeric" />
+            <Entry x:Name="CityEntry" Placeholder="City" />
 
-        <Button Text="Save Customer"
-                Clicked="OnSaveContactClicked"
-                BackgroundColor="ForestGreen"/>
-    </VerticalStackLayout>
+            <Button Text="Save Customer"
+                    Clicked="OnSaveContactClicked"
+                    BackgroundColor="ForestGreen"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
