@@ -23,8 +23,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<IFileService, FileService>();
         builder.Services.AddSingleton<ICustomerService, CustomerService>();
         builder.Services.AddSingleton<CustomerFactory>();
-
-
+        builder.Services.AddSingleton<ICustomerManagerService, CustomerManagerService>();
 
         return builder.Build();
     }

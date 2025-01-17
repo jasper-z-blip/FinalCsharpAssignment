@@ -7,4 +7,3 @@
         bool FileExists(string filePath);
     }
 }
-

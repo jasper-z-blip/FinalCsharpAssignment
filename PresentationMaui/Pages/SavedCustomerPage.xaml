@@ -20,10 +20,6 @@
                                 <Label Text="{Binding PostalCode}" />
                                 <Label Text="{Binding City}" />
                             </StackLayout>
-                            <ViewCell.ContextActions>
-                                <MenuItem Text="Edit" Clicked="OnEditCustomerClicked" CommandParameter="{Binding .}" />
-                                <MenuItem Text="Delete" Clicked="OnDeleteCustomerClicked" CommandParameter="{Binding .}" IsDestructive="True" />
-                            </ViewCell.ContextActions>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

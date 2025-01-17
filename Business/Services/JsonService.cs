@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Business.Services // Hela koden tagen från chatGPT
+namespace Business.Services
 {
     public class JsonService
     {
@@ -10,16 +10,18 @@ namespace Business.Services // Hela koden tagen från chatGPT
         {
             _filePath = filePath;
 
-            // Kontrollera om filen finns, om inte skapa en tom JSON-fil
+            EnsureFileExists();
+        }
+
+        private void EnsureFileExists()
+        {
+        // Kontrollera om filen finns, om inte skapa en tom JSON-fil.
             if (!File.Exists(_filePath))
             {
-                File.WriteAllText(_filePath, "[]"); // Initiera som en tom lista
+                File.WriteAllText(_filePath, "[]"); // Initiera som en tom lista.
             }
         }
 
-        /// <summary>
-        /// Läser och deserialiserar JSON-data från filen till en lista av typ T.
-        /// </summary>
         public List<T> LoadData<T>()
         {
             try
@@ -35,29 +37,29 @@ namespace Business.Services // Hela koden tagen från chatGPT
             }
             catch (Exception ex)
             {
-                // Logga eller hantera felet
-                Console.WriteLine($"Error reading JSON file: {ex.Message}");
+                // Logga eller hantera felet, returnerar en tom lista istället för att krascha.
+                Console.WriteLine($"Error reading the JSON file: {ex.Message}");
                 return new List<T>();
             }
         }
 
-        /// <summary>
-        /// Serialiserar och sparar en lista av typ T till JSON-filen.
-        /// </summary>
         public void SaveData<T>(List<T> data)
         {
             if (data == null)
             {
-                throw new ArgumentNullException("data");
+                throw new ArgumentNullException(nameof(data), "The list is empty.");
             }
             try
             {
+                // Gör om data till JSON format.
                 string json = JsonConvert.SerializeObject(data, Newtonsoft.Json.Formatting.Indented);
+
+                // Spara JSON-data i filen.
                 File.WriteAllText(_filePath, json);
             }
             catch (Exception ex)
             {
-                // Logga eller hantera felet
+                // Logga eller hantera felet.
                 Console.WriteLine($"Error writing to JSON file: {ex.Message}");
             }
         }

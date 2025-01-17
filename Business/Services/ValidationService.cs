@@ -4,6 +4,7 @@ namespace Business.Services
 {
     public static class ValidationService
     {
+        // Metod som kollar om namn är ifyllda, så dom inte är null eller whitespace. Samt att dom följer Regex.
         public static bool IsValidName(string name)
         {
             if (string.IsNullOrEmpty(name))
@@ -13,6 +14,8 @@ namespace Business.Services
 
             return Regex.IsMatch(name.Trim(), nameRegex);
         }
+
+        // Metod som kollar om email är ifyllt, så den inte är null eller whitespace. Samt att den följer Regex.
         public static bool IsValidEmail(string email)
         {
             if (string.IsNullOrWhiteSpace(email))

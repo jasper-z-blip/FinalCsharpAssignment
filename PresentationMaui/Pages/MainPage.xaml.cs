@@ -7,25 +7,21 @@ namespace PresentationMaui.Pages;
 
 public partial class MainPage : ContentPage
 {
-    private readonly ICustomerService _customerService;
+    private readonly ICustomerManagerService _customerManagerService;
     private readonly CustomerFactory _customerFactory;
 
-    public MainPage(ICustomerService customerService, CustomerFactory customerFactory)
+    public MainPage(ICustomerManagerService customerManagerService, CustomerFactory customerFactory)
     {
         InitializeComponent();
-        _customerService = customerService;
+        _customerManagerService = customerManagerService;
         _customerFactory = customerFactory;
     }
 
-    private async void OnSaveContactClicked(object sender, EventArgs e)
+    public async void OnSaveContactClicked(object sender, EventArgs e)
     {
-        var customers = await _customerService.LoadListFromJsonFile();
-
-        var newCustomerNumber = _customerService.GetNextCustomerNumber(customers);
-
+        // Skapa en ny kund från inmatningsfälten.
         var newCustomer = new Customer
         {
-            CustomerNumber = newCustomerNumber,
             FirstName = FirstNameEntry.Text,
             LastName = LastNameEntry.Text,
             Email = EmailEntry.Text,
@@ -35,20 +31,29 @@ public partial class MainPage : ContentPage
             City = CityEntry.Text
         };
 
+        // Validera kunden.
         var validator = new CustomerValidator();
         if (!validator.Validate(newCustomer, out string errorMessage))
         {
+            // Om valideringen misslyckas, visa ett felmeddelande och returnera.
             await DisplayAlert("Validation Error", errorMessage, "OK");
             return;
         }
 
-        await _customerService.AddCustomer(newCustomer);
+        // Hämtar nästa kundnummer, så varje kund får ett unikt nummer.
+        var newCustomerNumber = await _customerManagerService.GetNextCustomerNumberAsync();
+        newCustomer.CustomerNumber = newCustomerNumber;
+
+        // Spara den validerade kunden.
+        await _customerManagerService.AddCustomerAsync(newCustomer);
 
         await DisplayAlert("Success", "Customer saved successfully!", "OK");
         ClearForm();
     }
 
-    private void ClearForm()
+
+    // Rensar alla inmatningsfält i formuläret tex. när kund blivit sparad, så man kan fylla i nästa kund.
+    public void ClearForm()
     {
         FirstNameEntry.Text = string.Empty;
         LastNameEntry.Text = string.Empty;

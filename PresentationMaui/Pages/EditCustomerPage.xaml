@@ -1,30 +1,27 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:PresentationMaui.ViewModels"
              x:Class="PresentationMaui.Pages.EditCustomerPage"
-             Title="Edit Customer">
+             Title="Edit Customer"
+             x:DataType="vm:EditCustomerViewModel">
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Margin="25" Spacing="10">
-            <!-- Input för att ange kundnummer -->
-            <Entry x:Name="CustomerNumberEntry" Placeholder="Enter Customer Number" Keyboard="Numeric" />
+            <Entry Text="{Binding CustomerNumber}" Placeholder="Enter Customer Number" Keyboard="Numeric" />
             <Button Text="Search for Customer" Clicked="LoadCustomerButton_Clicked" BackgroundColor="ForestGreen" />
+            
+            <Entry Text="{Binding CustomerToEdit.FirstName}" Placeholder="Firstname" IsEnabled="{Binding CustomerToEdit}" />
+            <Entry Text="{Binding CustomerToEdit.LastName}" Placeholder="Lastname" IsEnabled="{Binding CustomerToEdit}" />
+            <Entry Text="{Binding CustomerToEdit.Email}" Placeholder="Email" IsEnabled="{Binding CustomerToEdit}" />
+            <Entry Text="{Binding CustomerToEdit.PhoneNumber}" Placeholder="Phone number" IsEnabled="{Binding CustomerToEdit}" />
+            <Entry Text="{Binding CustomerToEdit.Address}" Placeholder="Address" IsEnabled="{Binding CustomerToEdit}" />
+            <Entry Text="{Binding CustomerToEdit.PostalCode}" Placeholder="Postalcode" IsEnabled="{Binding CustomerToEdit}" />
+            <Entry Text="{Binding CustomerToEdit.City}" Placeholder="City" IsEnabled="{Binding CustomerToEdit}" />
 
-            <!-- Kunddetaljer -->
-            <Entry x:Name="FirstNameEntry" Placeholder="Firstname" IsEnabled="False" />
-            <Entry x:Name="LastNameEntry" Placeholder="Lastname" IsEnabled="False" />
-            <Entry x:Name="EmailEntry" Placeholder="Email" IsEnabled="False" />
-            <Entry x:Name="PhoneNumberEntry" Placeholder="Phone number" IsEnabled="False" />
-            <Entry x:Name="AddressEntry" Placeholder="Address" IsEnabled="False" />
-            <Entry x:Name="PostalCodeEntry" Placeholder="Postalcode" IsEnabled="False" />
-            <Entry x:Name="CityEntry" Placeholder="City" IsEnabled="False" />
-
-            <!-- Spara och radera knappar -->
             <HorizontalStackLayout Spacing="10">
-                <Button x:Name="SaveButton" Text="Save Changes" Clicked="SaveButton_Clicked" IsEnabled="False" BackgroundColor="ForestGreen" TextColor="White" />
-                <Button x:Name="DeleteButton" Text="Delete Customer" Clicked="DeleteButton_Clicked" IsEnabled="False" BackgroundColor="DarkRed" TextColor="White" />
+                <Button Text="Save Changes" Clicked="SaveButton_Clicked" IsEnabled="{Binding CustomerToEdit}" BackgroundColor="ForestGreen" TextColor="White" />
+                <Button Text="Delete Customer" Clicked="DeleteButton_Clicked" IsEnabled="{Binding CustomerToEdit}" BackgroundColor="DarkRed" TextColor="White" />
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
-
-

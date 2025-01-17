@@ -12,4 +12,3 @@ public partial class AppShell : Shell
         Routing.RegisterRoute("EditCustomerPage", typeof(Pages.EditCustomerPage));
     }
 }
-

@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "18610d88-a26e-4a11-8450-70c59e7416af",
+    "FirstName": "Jasper",
+    "LastName": "Packalem",
+    "Email": "jasper@doamin.se",
+    "PhoneNumber": "1234567890",
+    "Address": "begre 4",
+    "PostalCode": "44444",
+    "City": "f"
+  },
+  {
+    "Id": "c1f71422-6005-43c8-83ea-1f51a44acd59",
+    "FirstName": "Jasper",
+    "LastName": "Jöeren",
+    "Email": "dsd@fdf.se",
+    "PhoneNumber": "1234567890",
+    "Address": "fddf",
+    "PostalCode": "12345",
+    "City": "dddfd"
+  },
+  {
+    "Id": "58db217a-b4a4-498e-9fc8-622ad20cff85",
+    "FirstName": "ssss",
+    "LastName": "sssss",
+    "Email": "sss@fff.se",
+    "PhoneNumber": "1234567890",
+    "Address": "ggg",
+    "PostalCode": "12345",
+    "City": "ggggg"
+  },
+  {
+    "Id": "1c19a591-5700-4bef-8ecd-1ed550465fc8",
+    "FirstName": "dd",
+    "LastName": "dd",
+    "Email": "dd@ff.se",
+    "PhoneNumber": "1234567890",
+    "Address": "fvv",
+    "PostalCode": "12345",
+    "City": "vvv"
+  }
+]

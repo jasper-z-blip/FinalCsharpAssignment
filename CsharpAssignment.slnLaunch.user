@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "PresentationMaui\\PresentationMaui.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Presentation.Console.MainApp\\Presentation.Console.MainApp.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

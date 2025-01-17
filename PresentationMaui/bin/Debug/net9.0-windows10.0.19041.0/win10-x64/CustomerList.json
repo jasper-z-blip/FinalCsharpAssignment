@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "CustomerNumber": 2,
+    "FirstName": "Emily",
+    "LastName": "Breitner Madden",
+    "PhoneNumber": "0750459848",
+    "Email": "emily@domain.se",
+    "Address": "Berge 2",
+    "PostalCode": "73196",
+    "City": "Köping",
+    "Id": "6818e207-7876-4702-90e3-49f46b22222c"
+  },
+  {
+    "CustomerNumber": 3,
+    "FirstName": "Jappe",
+    "LastName": "Packalen",
+    "PhoneNumber": "0708654932",
+    "Email": "Jasper@domain.se",
+    "Address": "Berge 4",
+    "PostalCode": "32456",
+    "City": "Köping",
+    "Id": "18ab4750-5e11-4a06-b8be-16c2f446df23"
+  }
+]

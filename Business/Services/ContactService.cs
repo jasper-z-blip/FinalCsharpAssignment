@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Business.Models;
+﻿using Business.Models;
 
 namespace Business.Services
 {
@@ -12,15 +11,20 @@ namespace Business.Services
         {
             _jsonService = jsonService;
 
-            _contacts = _jsonService.LoadData<Contact>(); // Detta laddar befintliga kontakter sparade i Json.
+            // Detta laddar befintliga kontakter sparade i Json.
+            _contacts = _jsonService.LoadData<Contact>();
         }
+        
 
-        public void AddContact(Contact contact) //Detta läger till ny kontakt och sparar till fil.
+        // Detta lägger till ny kontakt och sparar till fil.
+        public void AddContact(Contact contact) 
         {
             _contacts.Add(contact);
             _jsonService.SaveData(_contacts);
         }
 
+
+        // Retunerar alla inlästa kontakter.
         public List<Contact> GetAllContacts()
         {
             return _contacts;

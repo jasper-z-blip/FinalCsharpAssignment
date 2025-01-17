@@ -8,10 +8,6 @@ namespace Shared.Interfaces
         Task SaveListToJsonFile(ObservableCollection<Customer> customers);
         Task<ObservableCollection<Customer>> LoadListFromJsonFile();
         Task AddCustomer(Customer customer);
-        int GetNextCustomerNumber(ObservableCollection<Customer> customers);
+        Task RemoveCustomer(Customer customer);
     }
 }
-
-
-
-

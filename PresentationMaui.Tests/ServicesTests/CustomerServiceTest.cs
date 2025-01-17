@@ -1,87 +1,84 @@
 ﻿using Moq;
-using Newtonsoft.Json;
 using Shared.Interfaces;
 using Shared.Models;
 using Shared.Services;
-using System.Collections.ObjectModel;
 using Xunit;
 
-namespace PresentationMaui.Tests.ServicesTest
+public class CustomerServiceTests
 {
-    public class CustomerServiceTests
+    [Fact]
+    public async Task AddCustomer_ShouldAddCustomerToList()
     {
-        private readonly Mock<IFileService> _fileServiceMock;
-        private readonly CustomerService _customerService;
+        //Arrange (Förebereder mock och skapa CustomerService.)
+        var mockFileService = new Mock<IFileService>();
+        var customerService = new CustomerService(mockFileService.Object);
 
-        public CustomerServiceTests()
+        //Skapar en testkund.
+        var customer = new Customer
         {
-            _fileServiceMock = new Mock<IFileService>();
-            _customerService = new CustomerService(_fileServiceMock.Object);
-        }
+            CustomerNumber = 1,
+            FirstName = "Jasper",
+            LastName = "Packalen",
+            Email = "jasper@domain.se",
+            PhoneNumber = "0701234567",
+            Address = "Högtalargatan 22",
+            PostalCode = "12345",
+            City = "Köping"
+        };
 
-        [Fact]
-        public async Task SaveListToJsonFile_ShouldCallWriteFileAsync()
+        //Act
+        await customerService.AddCustomer(customer);
+
+        //Assert (Kontroll att kunden lades till korrekt)
+        Assert.Single(customerService.Customers); // Att de var en kund.
+        Assert.Equal("Jasper", customerService.Customers[0].FirstName); // Att kundens Firstname var Jasper.
+    }
+
+    [Fact]
+    public async Task LoadListFromJsonFile_ShouldReturnEmpty_IfNoFileExists()
+    {
+        //Arrange
+        var mockFileService = new Mock<IFileService>();
+        mockFileService.Setup(f => f.FileExists(It.IsAny<string>())).Returns(false);
+
+        var customerService = new CustomerService(mockFileService.Object);
+
+        //Act
+        var customers = await customerService.LoadListFromJsonFile();
+
+        //Assert
+        Assert.Empty(customers);
+    }
+
+    [Fact]
+    public async Task RemoveCustomer_ShouldRemoveCustomerAndSaveList()
+    {
+        //Arrange
+        var mockFileService = new Mock<IFileService>();
+        var customerService = new CustomerService(mockFileService.Object);
+
+        var customerToRemove = new Customer
         {
-            // Arrange
-            var customers = new ObservableCollection<Customer>
-            {
-                new Customer { CustomerNumber = 1, FirstName = "John", LastName = "Doe" }
-            };
+            Id = Guid.NewGuid(),
+            CustomerNumber = 1,
+            FirstName = "Jasper",
+            LastName = "Packalen",
+            Email = "jasper@domain.se",
+            PhoneNumber = "0701234567",
+            Address = "Högtalargatan 22",
+            PostalCode = "12345",
+            City = "Köping"
+        };
 
-            string expectedJson = JsonConvert.SerializeObject(customers, Formatting.Indented);
+        customerService.Customers.Add(customerToRemove);
 
-            // Act
-            await _customerService.SaveListToJsonFile(customers);
+        mockFileService.Setup(f => f.WriteFileAsync(It.IsAny<string>(), It.IsAny<string>()))
+            .Returns(Task.CompletedTask);
 
-            // Assert
-            _fileServiceMock.Verify(
-                x => x.WriteFileAsync(It.IsAny<string>(), expectedJson),
-                Times.Once
-            );
-        }
+        //Act
+        await customerService.RemoveCustomer(customerToRemove);
 
-        [Fact]
-        public async Task LoadListFromJsonFile_ShouldReturnCustomerList()
-        {
-            // Arrange
-            var customers = new ObservableCollection<Customer>
-            {
-                new Customer { CustomerNumber = 1, FirstName = "John", LastName = "Doe" }
-            };
-            string json = JsonConvert.SerializeObject(customers);
-
-            // Mock FileExists to return true
-            _fileServiceMock.Setup(x => x.FileExists(It.IsAny<string>())).Returns(true);
-
-            // Mock ReadFileAsync to return JSON
-            _fileServiceMock.Setup(x => x.ReadFileAsync(It.IsAny<string>())).ReturnsAsync(json);
-
-            // Act
-            var result = await _customerService.LoadListFromJsonFile();
-
-            // Assert
-            Assert.NotNull(result);
-            Assert.NotEmpty(result);
-            Assert.Single(result);
-            Assert.Equal("John", result[0].FirstName);
-        }
-
-        [Fact]
-        public void GetNextCustomerNumber_ShouldReturnNextNumber()
-        {
-            // Arrange
-            var customers = new ObservableCollection<Customer>
-            {
-                new Customer { CustomerNumber = 1 },
-                new Customer { CustomerNumber = 2 }
-            };
-
-            // Act
-            var nextNumber = _customerService.GetNextCustomerNumber(customers);
-
-            // Assert
-            Assert.Equal(3, nextNumber);
-        }
+        //Assert
+        Assert.Empty(customerService.Customers);
     }
 }
-

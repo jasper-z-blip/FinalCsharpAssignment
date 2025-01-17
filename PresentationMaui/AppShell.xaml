@@ -20,11 +20,3 @@
         ContentTemplate="{DataTemplate local:EditCustomerPage}"
         Route="EditCustomerPage" />
 </Shell>
-
-
-
-
-
-
-
-

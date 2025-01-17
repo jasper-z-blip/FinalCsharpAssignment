@@ -16,7 +16,7 @@
         // Ett unikt ID-nummer för varje kund som skapas.
         public Guid Id { get; set; }
 
-        //Konstruktor som lägger till ett nytt unik GUID för varje customer"
+        // Konstruktor som lägger till ett nytt unik GUID för varje customer"
         public Customer()
         {
             Id = Guid.NewGuid();

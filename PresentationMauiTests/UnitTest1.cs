@@ -1,4 +1,4 @@
-﻿namespace PresentationMaui.Tests
+﻿namespace PresentationMauiTests
 {
     public class UnitTest1
     {

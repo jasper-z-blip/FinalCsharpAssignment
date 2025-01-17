@@ -46,6 +46,8 @@ namespace Presentation.Console.MainApp.UI // Fick problem när jag använde Cons
                 }
             }
         }
+
+        // Metod som Lägger till en ny kontakt, kollar också att valideringen stämmer.
         public void AddNewContact()
         {
             System.Console.Clear();
@@ -53,19 +55,19 @@ namespace Presentation.Console.MainApp.UI // Fick problem när jag använde Cons
 
             var contact = new Contact
             {
-                FirstName = ReadValidInput("First Name", ValidationService.IsValidName, "Name must contain only letters and be at least 2 characters long."
+                FirstName = InputService.ReadValidInput("First Name", ValidationService.IsValidName, "Name must contain only letters and be at least 2 characters long."
                 ),
-                LastName = ReadValidInput("Last Name", ValidationService.IsValidName, "Name must contain only letters and be at least 2 characters long."
+                LastName = InputService.ReadValidInput("Last Name", ValidationService.IsValidName, "Name must contain only letters and be at least 2 characters long."
                 ),
-                Email = ReadValidInput("Email", ValidationService.IsValidEmail, "Email must be valid, example of valid email: jasper@domain.com"
+                Email = InputService.ReadValidInput("Email", ValidationService.IsValidEmail, "Email must be valid, example of valid email: jasper@domain.com"
                 ),
-                PhoneNumber = ReadValidInput("PhoneNumber (10 digits)", ValidationService.IsValidPhone, "Phonenumber must be exactly 10 digits and contain only numbers."
+                PhoneNumber = InputService.ReadValidInput("PhoneNumber (10 digits)", ValidationService.IsValidPhone, "Phonenumber must be exactly 10 digits and contain only numbers."
                 ),
-                PostalCode = ReadValidInput("Postalcode (5 digits)", ValidationService.IsValidPostalCode, "Postalcode must be exactly 5 digits and contain only numbers."
+                PostalCode = InputService.ReadValidInput("Postalcode (5 digits)", ValidationService.IsValidPostalCode, "Postalcode must be exactly 5 digits and contain only numbers."
                 ),
-                Address = ReadNonEmptyInput("Street Adress"
+                Address = InputService.ReadNonEmptyInput("Street Adress"
                 ),
-                City = ReadNonEmptyInput("City")
+                City = InputService.ReadNonEmptyInput("City")
             };
 
             _contactService.AddContact(contact);
@@ -74,6 +76,8 @@ namespace Presentation.Console.MainApp.UI // Fick problem när jag använde Cons
             System.Console.ReadKey();
         }
 
+
+        // Metod som hanterar om inga kontakter finns och annars visar listan över kontakter.
         public void ListOfAllContacts()
         {
             System.Console.Clear();
@@ -98,38 +102,6 @@ namespace Presentation.Console.MainApp.UI // Fick problem när jag använde Cons
 
             System.Console.WriteLine("Press any key to return to the Main Menu");
             System.Console.ReadKey();
-        }
-
-        private static string ReadNonEmptyInput(string fieldName)
-        {
-            while (true)
-            {
-                System.Console.Write($"{fieldName}: ");
-                string? input = System.Console.ReadLine();
-
-                if (!string.IsNullOrEmpty(input))
-                {
-                    return input;
-                }
-
-                System.Console.WriteLine($"{fieldName} can't be empty");
-            }
-        }
-
-        private static string ReadValidInput(string fieldName, Func<string, bool> validationFunction, string errorMessage)
-        {
-            while (true)
-            {
-                System.Console.Write($"{fieldName}: ");
-                string? input = System.Console.ReadLine();
-
-                if (!string.IsNullOrEmpty(input) && validationFunction(input))
-                {
-                    return input;
-                }
-
-                System.Console.WriteLine(errorMessage);
-            }
         }
     }
 }

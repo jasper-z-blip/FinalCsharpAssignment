@@ -22,7 +22,7 @@ namespace Shared.Services
 
             if (string.IsNullOrWhiteSpace(customer.Email) || !IsEmailValid(customer.Email))
             {
-                errorMessage = "A valid Email is required, ex. user@domain.com.";
+                errorMessage = "A valid email is required for example: jasper@domain.com";
                 return false;
             }
 

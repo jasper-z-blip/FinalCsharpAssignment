@@ -1,3 +1,4 @@
+C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-x64\Microsoft.iOS.dll
 C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-x64\PresentationMaui.runtimeconfig.json
 C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-x64\PresentationMaui.dll
 C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-x64\PresentationMaui.pdb
@@ -218,7 +219,6 @@ C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-
 C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-x64\WindowsBase.dll
 C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-x64\mscorlib.dll
 C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-x64\netstandard.dll
-C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-x64\Microsoft.iOS.dll
 C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-x64\System.Private.CoreLib.dll
 C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-x64\libSystem.Globalization.Native.a
 C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-x64\libSystem.Globalization.Native.dylib
@@ -254,7 +254,6 @@ C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-
 C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
 C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-x64\Shared.dll
 C:\Projects\CsharpAssignment\PresentationMaui\bin\Debug\net9.0-ios\iossimulator-x64\Shared.pdb
-C:\Projects\CsharpAssignment\PresentationMaui\obj\Debug\net9.0-ios\iossimulator-x64\build-signature\signature
 C:\Projects\CsharpAssignment\PresentationMaui\obj\Debug\net9.0-ios\iossimulator-x64\mauiimage.inputs
 C:\Projects\CsharpAssignment\PresentationMaui\obj\Debug\net9.0-ios\iossimulator-x64\mauifont.inputs
 C:\Projects\CsharpAssignment\PresentationMaui\obj\Debug\net9.0-ios\iossimulator-x64\mauisplash.inputs

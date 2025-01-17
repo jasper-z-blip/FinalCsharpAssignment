@@ -16,6 +16,7 @@
             Id = Guid.NewGuid();
         }
 
+        // Metod för att visa kontaktens info, förnamn, efternamn, email, telefonnummer osv..
         public override string ToString()
         {
             return $@"
