@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Projects\\CsharpAssignment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E0429FC-DCA5-4B27-8FC1-3677542D770C}|PresentationMaui.Tests\\PresentationMaui.Tests.csproj|c:\\projects\\csharpassignment\\presentationmaui.tests\\viewmodeltests\\editcustomerviewmodeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E0429FC-DCA5-4B27-8FC1-3677542D770C}|PresentationMaui.Tests\\PresentationMaui.Tests.csproj|solutionrelative:presentationmaui.tests\\viewmodeltests\\editcustomerviewmodeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCCD877E-628A-4997-89F9-69DAC6DFCE81}|PresentationMaui\\PresentationMaui.csproj|c:\\projects\\csharpassignment\\presentationmaui\\pages\\editcustomerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCCD877E-628A-4997-89F9-69DAC6DFCE81}|PresentationMaui\\PresentationMaui.csproj|solutionrelative:presentationmaui\\pages\\editcustomerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FCCD877E-628A-4997-89F9-69DAC6DFCE81}|PresentationMaui\\PresentationMaui.csproj|c:\\projects\\csharpassignment\\presentationmaui\\viewmodels\\editcustomerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditCustomerPage.xaml.cs",
+              "DocumentMoniker": "C:\\Projects\\CsharpAssignment\\PresentationMaui\\Pages\\EditCustomerPage.xaml.cs",
+              "RelativeDocumentMoniker": "PresentationMaui\\Pages\\EditCustomerPage.xaml.cs",
+              "ToolTip": "C:\\Projects\\CsharpAssignment\\PresentationMaui\\Pages\\EditCustomerPage.xaml.cs",
+              "RelativeToolTip": "PresentationMaui\\Pages\\EditCustomerPage.xaml.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T14:03:20.379Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -28,22 +41,9 @@
               "RelativeDocumentMoniker": "PresentationMaui\\ViewModels\\EditCustomerViewModel.cs",
               "ToolTip": "C:\\Projects\\CsharpAssignment\\PresentationMaui\\ViewModels\\EditCustomerViewModel.cs",
               "RelativeToolTip": "PresentationMaui\\ViewModels\\EditCustomerViewModel.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAswIsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAI4AAAAAAAAAAADwv3oAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T13:19:16.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EditCustomerViewModelTests.cs",
-              "DocumentMoniker": "C:\\Projects\\CsharpAssignment\\PresentationMaui.Tests\\ViewModelTests\\EditCustomerViewModelTests.cs",
-              "RelativeDocumentMoniker": "PresentationMaui.Tests\\ViewModelTests\\EditCustomerViewModelTests.cs",
-              "ToolTip": "C:\\Projects\\CsharpAssignment\\PresentationMaui.Tests\\ViewModelTests\\EditCustomerViewModelTests.cs*",
-              "RelativeToolTip": "PresentationMaui.Tests\\ViewModelTests\\EditCustomerViewModelTests.cs*",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAAAHcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T12:50:44.158Z",
+              "WhenOpened": "2025-01-17T14:00:52.517Z",
               "EditorCaption": ""
             }
           ]

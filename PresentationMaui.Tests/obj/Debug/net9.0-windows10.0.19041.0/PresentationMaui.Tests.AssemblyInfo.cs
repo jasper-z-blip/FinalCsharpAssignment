@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PresentationMaui.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0a97786d6208c72d2a10de9fe5a0813c38f6084")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6baa9ff0ed71ca57cb4289b812cc99da5f661ef3")]
 [assembly: System.Reflection.AssemblyProductAttribute("PresentationMaui.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PresentationMaui.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

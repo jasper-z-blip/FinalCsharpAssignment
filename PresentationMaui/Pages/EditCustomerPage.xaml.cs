@@ -47,8 +47,6 @@ namespace PresentationMaui.Pages
             await _viewModel.SaveCustomerAsync();
             if (_viewModel.CustomerToEdit != null)
             {
-                // Om sparning lyckas, visa framgångsmeddelande och rensa formuläret.
-                await DisplayAlert("Success", "Customer details updated!", "OK");
                 ClearForm();
             }
         }
